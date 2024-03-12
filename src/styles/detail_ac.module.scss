@@ -1,0 +1,16 @@
+
+.detailAccount{
+    width: fit-content;
+    height: 50px;
+    margin: auto;
+    padding: 10px 5px;
+    border-radius: 100vh;
+    background: linear-gradient(232deg, #1E86E5 32.74%, #1EC1E5 95.49%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-size: 12px;
+        color: #fff;
+    }
+}
