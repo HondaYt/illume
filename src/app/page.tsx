@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { lazy } from 'react';
 import { Dosis } from 'next/font/google';
 import Splash from '@/components/splash';
-import ButtonS from '@/components/button';
+import Rooms from '@/components/room';
 
 
 
@@ -18,7 +18,7 @@ export default function App() {
     return (
         <>
             <Splash />
-            <ButtonS title="入室" href="/room" />
+            <Rooms />
         </>
     )
 }
