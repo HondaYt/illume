@@ -18,7 +18,7 @@ export default function App() {
     return (
         <>
             <Splash />
-            <ButtonS />
+            <ButtonS title="入室" href="/room" />
         </>
     )
 }
