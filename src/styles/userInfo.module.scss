@@ -1,0 +1,30 @@
+
+.user_area{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    img{
+        margin: 10px 0;
+    }
+    &_info{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .folloBtn{
+        width: fit-content;
+        margin: 10px 0;
+        border-radius: 100vh;
+        background: linear-gradient(232deg, #1E86E5 32.74%, #1EC1E5 95.49%);
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+}
