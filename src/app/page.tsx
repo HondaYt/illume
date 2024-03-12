@@ -10,6 +10,7 @@ import Mainheader from '@/components/main_header';
 import GroupAdd from '@/components/add_group';
 import Mainfooter from '@/components/main_footer';
 import Subheader from '@/components/sub_header';
+import Comment from '@/components/comment';
 
 
 
@@ -27,6 +28,7 @@ export default function App() {
             <GroupAdd />
             <Mainfooter />
             <Subheader />
+            <Comment />
         </>
     )
 }
