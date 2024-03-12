@@ -7,6 +7,8 @@ import { Dosis } from 'next/font/google';
 import Splash from '@/components/splash';
 import Rooms from '@/components/room';
 import Mainheader from '@/components/main_header';
+import GroupAdd from '@/components/add_group';
+import Mainfooter from '@/components/main_footer';
 
 
 
@@ -21,6 +23,8 @@ export default function App() {
             <Mainheader />
             <Splash />
             <Rooms />
+            <GroupAdd />
+            <Mainfooter />
         </>
     )
 }

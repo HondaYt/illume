@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { lazy } from 'react';
 import styles from '@/styles/button.module.scss';
 
 type ButtonProps = {

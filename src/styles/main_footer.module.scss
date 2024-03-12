@@ -1,0 +1,26 @@
+
+.main_footer{
+    width: 100%;
+    height: 80px;
+    border-radius: 32px 32px 0 0;
+    background: linear-gradient(214deg, #1E86E5 -16.59%, #1EC1E5 92.22%);
+}
+
+.myprofile_icon{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    img:nth-child(1){
+        border-radius: 100%;
+    }
+    img:nth-child(2){
+        border-radius: 100%;
+    }
+    img:nth-child(3){
+        border-radius: 100%;
+    }
+}
