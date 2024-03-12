@@ -9,6 +9,7 @@ import Rooms from '@/components/room';
 import Mainheader from '@/components/main_header';
 import GroupAdd from '@/components/add_group';
 import Mainfooter from '@/components/main_footer';
+import Subheader from '@/components/sub_header';
 
 
 
@@ -25,6 +26,7 @@ export default function App() {
             <Rooms />
             <GroupAdd />
             <Mainfooter />
+            <Subheader />
         </>
     )
 }
