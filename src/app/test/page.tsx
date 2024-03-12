@@ -12,6 +12,7 @@ import Mainfooter from '@/components/main_footer';
 import Subheader from '@/components/sub_header';
 import Comment from '@/components/comment';
 import UserInfo from '@/components/user_info';
+import Hobbys from '@/components/hobby';
 
 
 
@@ -31,6 +32,7 @@ export default function App() {
             <Subheader />
             <Comment />
             <UserInfo />
+            <Hobbys />
         </>
     )
 }
