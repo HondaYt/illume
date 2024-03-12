@@ -6,6 +6,7 @@ import { lazy } from 'react';
 import { Dosis } from 'next/font/google';
 import Splash from '@/components/splash';
 import Rooms from '@/components/room';
+import Mainheader from '@/components/main_header';
 
 
 
@@ -17,6 +18,7 @@ const DosisFont = Dosis({
 export default function App() {
     return (
         <>
+            <Mainheader />
             <Splash />
             <Rooms />
         </>

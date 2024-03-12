@@ -12,11 +12,11 @@ export default function room() {
                 <JoinButton title="入室" href="/room"/>
             </div>
             <div className={styles.room_userIcon}>
-                <Image src="https://picsum.photos/500" width={75} height={75} loading='lazy' alt="アイコン"/>
-                <Image src="https://picsum.photos/500" width={75} height={75} loading='lazy' alt="アイコン"/>
-                <Image src="https://picsum.photos/500" width={75} height={75} loading='lazy' alt="アイコン"/>
-                <Image src="https://picsum.photos/500" width={75} height={75} loading='lazy' alt="アイコン"/>
-                <Image src="https://picsum.photos/500" width={75} height={75} loading='lazy' alt="アイコン"/>
+                <Image src="https://picsum.photos/500" width={50} height={50} loading='lazy' alt="アイコン"/>
+                <Image src="https://picsum.photos/500" width={50} height={50} loading='lazy' alt="アイコン"/>
+                <Image src="https://picsum.photos/500" width={50} height={50} loading='lazy' alt="アイコン"/>
+                <Image src="https://picsum.photos/500" width={50} height={50} loading='lazy' alt="アイコン"/>
+                <Image src="https://picsum.photos/500" width={50} height={50} loading='lazy' alt="アイコン"/>
             </div>
         </div>
     )
