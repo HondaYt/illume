@@ -1,0 +1,36 @@
+
+.commentinput_area{
+    width: 80%;
+    border-radius: 100vh;
+    margin: 0 auto;
+    background: linear-gradient(232deg, #1E86E5 32.74%, #1EC1E5 95.49%);
+    &_container{
+        width: 90%;
+        padding: 10px 0;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: row;
+        input{
+            width: 50%;
+            padding: 0 10px;
+            border: 0.5px solid rgba(255, 255, 255, 0.50);
+            background: rgba(255, 255, 255, 0.30);
+            border-radius: 100vh;
+            font-size: 14px;
+            &::placeholder{
+                color: #fff;
+            }
+        }
+        p{
+            padding: 0 10px;
+            color: #fff;
+            font-size: 14px;
+        }
+        .commentinput_send{
+            margin-left: auto;
+            margin-right: 5%;
+            padding: 0 0 0 10px ;
+            border-left: 1px solid #fff;
+        }
+    }
+}
