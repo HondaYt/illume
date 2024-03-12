@@ -13,6 +13,7 @@ import Subheader from '@/components/sub_header';
 import Comment from '@/components/comment';
 import UserInfo from '@/components/user_info';
 import Hobbys from '@/components/hobby';
+import PostList from '@/components/postList';
 
 
 
@@ -33,6 +34,7 @@ export default function App() {
             <Comment />
             <UserInfo />
             <Hobbys />
+            <PostList />
         </>
     )
 }
