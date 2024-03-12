@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { lazy } from 'react';
 import { Dosis } from 'next/font/google';
 import Splash from '@/components/splash';
+import ButtonS from '@/components/button';
 
 
 
@@ -15,7 +16,10 @@ const DosisFont = Dosis({
 
 export default function App() {
     return (
-        <Splash />
+        <>
+            <Splash />
+            <ButtonS />
+        </>
     )
 }
 
