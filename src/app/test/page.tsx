@@ -11,7 +11,11 @@ import GroupAdd from '@/components/add_group';
 import Mainfooter from '@/components/main_footer';
 import Subheader from '@/components/sub_header';
 import Comment from '@/components/comment';
-import Main from '@/app/main/page';
+import UserInfo from '@/components/user_info';
+import Hobbys from '@/components/hobby';
+import PostList from '@/components/postList';
+
+
 
 const DosisFont = Dosis({
     weight: "400",
@@ -19,22 +23,18 @@ const DosisFont = Dosis({
 })
 
 export default function App() {
-    const [showSplash, setShowSplash] = useState(true); // Splashの表示状態を管理する状態変数
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowSplash(false); // 3秒後にSplashを非表示にする
-        }, 2300);
-
-        return () => clearTimeout(timer); // コンポーネントのアンマウント時にタイマーをクリアする
-    }, []);
-
     return (
         <>
-
-            {showSplash && <Splash />}
-            <Main />
-
+            <Mainheader />
+            <Splash />
+            <Rooms />
+            <GroupAdd />
+            <Mainfooter />
+            <Subheader />
+            <Comment />
+            <UserInfo />
+            <Hobbys />
+            <PostList />
         </>
     )
 }
