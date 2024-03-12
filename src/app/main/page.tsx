@@ -11,7 +11,9 @@ import GroupAdd from '@/components/add_group';
 import Mainfooter from '@/components/main_footer';
 import Subheader from '@/components/sub_header';
 import Comment from '@/components/comment';
-import Main from '@/app/main/page';
+import UserIcon from '@/components/userIcon';
+
+
 
 const DosisFont = Dosis({
     weight: "400",
@@ -19,22 +21,20 @@ const DosisFont = Dosis({
 })
 
 export default function App() {
-    const [showSplash, setShowSplash] = useState(true); // Splashの表示状態を管理する状態変数
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowSplash(false); // 3秒後にSplashを非表示にする
-        }, 2300);
-
-        return () => clearTimeout(timer); // コンポーネントのアンマウント時にタイマーをクリアする
-    }, []);
 
     return (
         <>
+            <Mainheader />
+            {[...Array(4)].map((_, index) => (
+                <UserIcon key={`userIcon-${index}`} random={index} />
+            ))}
 
-            {showSplash && <Splash />}
-            <Main />
 
+            <Rooms />
+            <GroupAdd />
+            <Mainfooter />
+            <Subheader />
+            <Comment />
         </>
     )
 }
