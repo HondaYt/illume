@@ -14,6 +14,8 @@ import Comment from '@/components/comment';
 import UserInfo from '@/components/user_info';
 import Hobbys from '@/components/hobby';
 import PostList from '@/components/postList';
+import CommentInput from '@/components/comment_input';
+import Empathy from '@/components/empathy';
 
 
 
@@ -35,6 +37,8 @@ export default function App() {
             <UserInfo />
             <Hobbys />
             <PostList />
+            <CommentInput />
+            <Empathy />
         </>
     )
 }
