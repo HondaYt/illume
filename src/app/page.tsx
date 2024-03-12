@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { lazy } from 'react';
 import { Dosis } from 'next/font/google';
+import Splash from '@/components/splash';
 
 
 
@@ -12,21 +13,9 @@ const DosisFont = Dosis({
     subsets: ["latin"]
 })
 
-const HomePage = () => {
+export default function App() {
+    return (
+        <Splash />
+    )
+}
 
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowSplash(false);
-        }, 3000);
-
-        return () => clearTimeout(timer);
-    }, []);
-
-    // スプラッシュが非表示の場合は何も表示しない
-    if (!showSplash) return null;
-
-    return;
-};
-
-export default HomePage;
