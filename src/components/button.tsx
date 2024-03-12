@@ -3,13 +3,20 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import Link from 'next/link';
 import { lazy } from 'react';
 import styles from '@/styles/button.module.scss';
 
-export default function button() {
+type ButtonProps = {
+    title: string;
+    href: string;
+}
+
+export default function button(props: ButtonProps) {
 
     return (
-        <div className={styles.button}>
-            <h1>入室</h1>
-        </div>)
+        <Link href={props.href} className={styles.button}>
+            <p>{props.title}</p>
+        </Link>
+    )
 }
