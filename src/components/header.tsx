@@ -1,5 +1,5 @@
 "use client"
-import styles from '@/styles/main_header.module.scss';
+import styles from '@/styles/header.module.scss';
 export default function Header({
   children,
 }: Readonly<{
