@@ -1,9 +1,21 @@
 //  splash
 
+html{
+
+}
+
 .splash{
     width: 100%;
     height: 100vh;
-    background: rgb(20,71,254);
-    background: linear-gradient(191deg, rgba(20,71,254,1) 0%, rgba(37,191,239,1) 100%);
+    background: linear-gradient(185deg, #1447FE 33.23%, #25BFEF 96.03%);
     z-index: -2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size: 48px;
+        color: #fff;
+    }
 }
+
