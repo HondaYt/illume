@@ -1,7 +1,6 @@
 "use client"
 import styles from '@/styles/main_header.module.scss';
 import { Dosis } from 'next/font/google';
-import Image from 'next/image';
 
 const DosisFont = Dosis({
     weight: "400",
@@ -9,7 +8,7 @@ const DosisFont = Dosis({
 })
 
 
-export default function mainheade() {
+export default function mainheader() {
     return (
         <div className={styles.main_header}>
             <h1 className={DosisFont.className}>illuMe</h1>
