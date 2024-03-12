@@ -1,23 +1,32 @@
 "use client"
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { lazy } from 'react';
 import { Dosis } from 'next/font/google';
-import { waitForDebugger } from 'inspector';
+
+
 
 const DosisFont = Dosis({
     weight: "400",
     subsets: ["latin"]
 })
 
-
 const HomePage = () => {
-    return(
-        <div className='splash'>
-        <Image src="splashLogo.svg" alt="ロゴ" width={150} height={150} loading='lazy'/>
-        <h1 className={DosisFont.className}>illuMe</h1>
-    </div>
-)};
+
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowSplash(false);
+        }, 3000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    // スプラッシュが非表示の場合は何も表示しない
+    if (!showSplash) return null;
+
+    return;
+};
 
 export default HomePage;
