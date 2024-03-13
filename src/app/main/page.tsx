@@ -27,8 +27,8 @@ export default function Main() {
     return (
         <main className={styles.main}>
             <div className={styles.room_wrapper}>
-                <Room roomName="ECC WebDesign" href="/room" count={15} />
-                <Room roomName="軽音部" href="/room" count={10} />
+                <Room roomName="ECC WebDesign" href="/roomInner" count={15} />
+                <Room roomName="軽音部" href="/roomInner" count={10} />
             </div>
         </main>
     )
