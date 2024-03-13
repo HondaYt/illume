@@ -6,6 +6,7 @@
     min-height: 80px;
     border-radius: 100vh;
     background: linear-gradient(262deg, #59d4fa 36.35%, #b1edff 96.4%);
+    z-index: 100;
 
     p {
         font-size: 18px;
@@ -22,29 +23,13 @@
         justify-content: center;
     }
     &::after {
+        z-index: 1;
         content: "";
-        width: 32px;
-        height: 23px;
+        width: 16px;
+        height: 16px;
         background: url("/assets/comment_arrow.svg") no-repeat top/contain;
         position: absolute;
-        top: 86%;
+        top: 96%;
         left: 16%;
-    }
-}
-
-.mine {
-    .comment_good {
-        margin-left: 30px;
-        width: 30px;
-        height: 30px;
-        background-color: #fff;
-        border-radius: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img {
-            width: 25px;
-            height: 25px;
-        }
     }
 }
