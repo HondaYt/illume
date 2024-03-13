@@ -19,10 +19,10 @@ export default function Room() {
 
     const comment = [
         { text: "映画" },
-        { text: "次郎ラーメン" },
+        { text: "ラーメン" },
         { text: "ゲーム" },
         { text: "アニメ" },
-        { text: "スポーツ" },
+        { text: "ギター" },
 
     ];
     return (

@@ -14,7 +14,7 @@ export default function subHeader() {
         <div className={styles.sub_header}>
             <div className={styles.sub_header_container}>
                 <p>退出</p>
-                <h1>部屋名</h1>
+                <h1></h1>
                 <Image src='assets/icon-menu.svg' width={30} height={30} alt='メニュー' loading='lazy' />
             </div>
         </div>

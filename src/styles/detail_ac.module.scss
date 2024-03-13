@@ -1,5 +1,5 @@
 .detailAccount {
-    width: fit-content;
+    width: 180px;
     height: 100%;
     padding: 0 16px;
     border-radius: 100vh;
@@ -7,8 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    p {
-        font-size: 14px;
-        color: #fff;
-    }
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
 }

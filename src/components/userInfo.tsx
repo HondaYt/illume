@@ -1,7 +1,7 @@
 "use client"
-import styles from '@/styles/userInfo.module.scss';import Image from 'next/image';
+import styles from '@/styles/userInfo.module.scss'; import Image from 'next/image';
 
-export default function User_info() {
+export default function UserInfo() {
     return (
         <div className={styles.user_area}>
             <Image src='https://picsum.photos/500' width={50} height={50} loading='lazy' alt="アイコン"></Image>
@@ -9,7 +9,7 @@ export default function User_info() {
                 <p>ユーザー名</p>
                 <p>1月2日</p>
             </div>
-            <div className={styles.folloBtn}>
+            <div className={styles.followBtn}>
                 <p>フォロー</p>
             </div>
         </div>

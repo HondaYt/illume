@@ -1,28 +1,27 @@
-
-.user_area{
+.user_area {
     width: 90%;
     margin: 0 auto;
     display: flex;
-    img{
+    img {
         margin: 10px 0;
     }
-    &_info{
+    &_info {
         margin: 10px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
     }
-    .folloBtn{
+    .followBtn {
         width: fit-content;
         margin: 10px 0;
         border-radius: 100vh;
-        background: linear-gradient(232deg, #1E86E5 32.74%, #1EC1E5 95.49%);
+        background: linear-gradient(232deg, #1e86e5 32.74%, #1ec1e5 95.49%);
         padding: 5px 15px;
         display: flex;
         align-items: center;
         justify-content: center;
-        p{
+        p {
             color: #fff;
             font-size: 14px;
         }

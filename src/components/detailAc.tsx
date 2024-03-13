@@ -1,11 +1,12 @@
 "use client"
+import Link from 'next/link';
 import styles from '@/styles/detail_ac.module.scss';
 
 
 export default function Empathy() {
     return (
-        <div className={styles.detailAccount}>
-            <p>もっと知りたい！</p>
-        </div>
+        <Link className={styles.detailAccount} href={'/profile'}>
+            もっと知りたい！
+        </Link>
     )
 };

@@ -5,8 +5,8 @@ import { Inter } from "next/font/google";
 import 'ress';
 import "../styles/globals.scss";
 import Header from "@/components/header";
-import MainHeader from "@/components/main_header";
-import SubHeader from "@/components/sub_header";
+import MainHeader from "@/components/mainHeader";
+import SubHeader from "@/components/subHeader";
 import Footer from "@/components/footer";
 import AddGroup from "@/components/addGroup";
 

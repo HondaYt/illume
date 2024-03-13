@@ -2,7 +2,7 @@
 import styles from '@/styles/profile_header.module.scss';
 import { Dosis } from 'next/font/google';
 import Image from 'next/image';
-import UserInfo from '@/components/user_info';
+import UserInfo from '@/components/userInfo';
 
 
 const DosisFont = Dosis({
@@ -22,6 +22,6 @@ export default function Profile_header() {
                 <p>私の趣味は、テレビゲームです。最近では、JavaScriptを勉強しています。</p>
             </div>
         </div>
-    
+
     )
 };

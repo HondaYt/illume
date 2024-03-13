@@ -1,7 +1,7 @@
 
 import Hobby from '@/components/hobby';
 import PostList from '@/components/postList';
-import styles from '@/styles/roomInner.module.scss';
+import styles from '@/styles/profile.module.scss';
 export default function Profile() {
 
     return (
