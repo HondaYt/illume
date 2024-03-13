@@ -6,10 +6,10 @@ import { lazy } from 'react';
 import { Dosis } from 'next/font/google';
 import Splash from '@/components/splash';
 import Rooms from '@/components/room';
-import Mainheader from '@/components/main_header';
-import GroupAdd from '@/components/add_group';
-import Mainfooter from '@/components/main_footer';
-import Subheader from '@/components/sub_header';
+import Mainheader from '@/components/mainHeader';
+import GroupAdd from '@/components/addGroup';
+import Mainfooter from '@/components/footer';
+import Subheader from '@/components/subHeader';
 import Comment from '@/components/comment';
 import Main from '@/app/main/page';
 
@@ -31,10 +31,8 @@ export default function App() {
 
     return (
         <>
-
             {showSplash && <Splash />}
             <Main />
-
         </>
     )
 }

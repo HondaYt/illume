@@ -1,28 +1,36 @@
-
-.user_area{
-    width: 90%;
+.user_area {
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    img{
-        margin: 10px 0;
+    align-items: center;
+    color: #fff;
+    img {
+        border-radius: 100vh;
     }
-    &_info{
-        margin: 10px;
+    &_info {
+        margin: 0 20px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        font-size: 16px;
+        .user_name{
+            font-weight: bold;
+        }
+        .user_birth{
+            font-size: 12px;
+        }
     }
-    .folloBtn{
-        width: fit-content;
-        margin: 10px 0;
+    .followBtn {
+        width: 120px;
+        margin: 30px 0 30px auto;
         border-radius: 100vh;
-        background: linear-gradient(232deg, #1E86E5 32.74%, #1EC1E5 95.49%);
-        padding: 5px 15px;
+        border: 1px solid #fff;
+        padding: 5px 10px;
         display: flex;
         align-items: center;
         justify-content: center;
-        p{
+        p {
             color: #fff;
             font-size: 14px;
         }

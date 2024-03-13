@@ -20,7 +20,7 @@ export default function Empathy() {
 
     return (
         <div className={`${styles.empathyLog} ${startAnimation ? styles.fadeOut : ''}`}>
-            <p className={styles.empathyLog_msg}><span>ほんだゆうと</span>に共感しました。</p>
+            <p className={styles.empathyLog_msg}><span>上森たくと</span>に共感されました。</p>
             <DetailAC />
         </div>
     );
