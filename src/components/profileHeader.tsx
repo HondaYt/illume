@@ -15,7 +15,9 @@ export default function Profile_header() {
     return (
         <div>
             <div className={styles.profile_header}>
-                <Image src="assets/icon-back.svg" width={20} height={20} alt=''/>
+                <Link href="/src/app/roomInner">
+                    <Image src="assets/icon-back.svg" width={25} height={25} alt=''/>
+                </Link>
             </div>
             <div className={styles.profile_container}>
                 <UserInfo />
