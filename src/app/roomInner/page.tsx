@@ -2,8 +2,6 @@ import Comment from '@/components/comment';
 import styles from '@/styles/roomInner.module.scss';
 export default function Room() {
 
-    const
-
     return (
         <>
             <div className={styles.postsWrap}>
