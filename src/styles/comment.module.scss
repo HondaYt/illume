@@ -1,48 +1,40 @@
-
-.comment_area{
+.comment_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80%;
     height: 80px;
     border-radius: 100vh;
-    background: linear-gradient(262deg, #59D4FA 36.35%, #B1EDFF 96.4%);
-    &_container{
-        width: 80%;
-        height: 80px;
+    background: linear-gradient(262deg, #59d4fa 36.35%, #b1edff 96.4%);
+
+    p {
+        font-size: 18px;
+    }
+    position: relative;
+    .comment_good {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 2px solid #fff;
+        border-radius: 100vh;
         display: flex;
-        justify-content: flex-end;
         align-items: center;
-        p{
-            font-size: 18px;
-        }
-        .comment_good{
-            margin-left: 30px;
-            width: 30px;
-            height: 30px;
-            border: 2px solid #fff;
-            border-radius: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            img{
-                width: 25px;
-                height: 25px;
-            }
-        }
-        position: relative;
-        &::after{
-            content: "";
-            width: 10px;
-            height: 10px;
-            background-color: #59D4FA;
-            position: absolute;
-            bottom: -10px;
-            right: 0;
-            transform: rotate(45deg);
-        }
+        justify-content: center;
+    }
+    &::after {
+        content: "";
+        width: 32px;
+        height: 23px;
+        background: url("/assets/comment_arrow.svg") no-repeat top/contain;
+        position: absolute;
+        top: 86%;
+        left: 16%;
     }
 }
 
-.mine{
-    .comment_good{
+.mine {
+    .comment_good {
         margin-left: 30px;
         width: 30px;
         height: 30px;
@@ -51,7 +43,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+        img {
             width: 25px;
             height: 25px;
         }
