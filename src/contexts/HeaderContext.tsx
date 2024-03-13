@@ -21,7 +21,7 @@ export const HeaderProvider = ({ children }: { children: ReactNode }) => {
 
     useEffect(() => {
         switch (pathname) {
-            case '':
+            case '/':
                 setCurrentHeader(<MainHeader />);
                 break;
             case '/roomInner':
