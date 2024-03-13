@@ -8,15 +8,17 @@ const DosisFont = Dosis({
     subsets: ["latin"]
 })
 
+type CommentProps = {
+    text: string;
+}
 
-export default function mainfooter() {
+
+export default function mainfooter(props: CommentProps) {
     return (
         <div className={styles.comment_area}>
-            <div className={styles.comment_area_container}>
-                <p>映画が好き！</p>
-                <div className={styles.comment_good}>
-                    <Image src="assets/icon-good.svg" width={50} height={50} loading='lazy' alt="グッドボタン"></Image>
-                </div>
+            <p>{props.text}が好き！</p>
+            <div className={styles.comment_good}>
+                <Image src="assets/icon-good.svg" width={30} height={30} loading='lazy' alt="グッドボタン" />
             </div>
         </div>
     )
