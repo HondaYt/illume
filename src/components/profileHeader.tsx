@@ -3,7 +3,7 @@ import styles from '@/styles/profile_header.module.scss';
 import { Dosis } from 'next/font/google';
 import Image from 'next/image';
 import UserInfo from '@/components/userInfo';
-
+import Link from 'next/link';
 
 const DosisFont = Dosis({
     weight: "400",
@@ -15,11 +15,11 @@ export default function Profile_header() {
     return (
         <div>
             <div className={styles.profile_header}>
-                <p>＜</p>
+                <Image src="assets/icon-back.svg" width={20} height={20} alt=''/>
             </div>
             <div className={styles.profile_container}>
                 <UserInfo />
-                <p>私の趣味は、テレビゲームです。最近では、JavaScriptを勉強しています。</p>
+                <p className={styles.profile_container_message}>僕の趣味はモンスターエナジーを飲むこと！楽しい人生を送るんだ！わーい！</p>
             </div>
         </div>
 
