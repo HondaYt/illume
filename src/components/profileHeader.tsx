@@ -10,13 +10,12 @@ const DosisFont = Dosis({
     subsets: ["latin"]
 })
 
-
 export default function Profile_header() {
     return (
         <div>
-            <div className={styles.profile_header}>
-                <Image src="assets/icon-back.svg" width={20} height={20} alt=''/>
-            </div>
+            <Link href="/roomInner" className={styles.back_link}>
+                <Image src="assets/icon-back.svg" width={20} height={20} alt='' />
+            </Link>
             <div className={styles.profile_container}>
                 <UserInfo />
                 <p className={styles.profile_container_message}>僕の趣味はモンスターエナジーを飲むこと！楽しい人生を送るんだ！わーい！</p>

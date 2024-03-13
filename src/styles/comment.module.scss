@@ -7,6 +7,7 @@
     border-radius: 100vh;
     background: linear-gradient(262deg, #59d4fa 36.35%, #b1edff 96.4%);
     z-index: 100;
+    left: -20px;
 
     p {
         font-size: 18px;
@@ -23,7 +24,6 @@
         justify-content: center;
     }
     &::after {
-        z-index: 1;
         content: "";
         width: 16px;
         height: 16px;
@@ -31,5 +31,19 @@
         position: absolute;
         top: 96%;
         left: 16%;
+    }
+}
+.mine {
+    background: url("/assets/comment_arrow.svg") no-repeat top/contain;
+    transform: scale(-1, 1);
+    box-sizing: border-box;
+    border: 5px solid #a1e9ff;
+    background: #fff;
+    left: 20px;
+    &::after {
+        top: 100%;
+    }
+    p {
+        transform: scale(-1, 1);
     }
 }
