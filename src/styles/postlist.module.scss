@@ -24,6 +24,16 @@
             font-size: 16px;
             background: linear-gradient(262deg, #59D4FA 36.35%, #B1EDFF 96.4%);
             border-radius: 100vh;
+            position: relative;
+            &::after {
+                content: "";
+                width: 16px;
+                height: 15px;
+                background: url("/assets/comment_arrow.svg") no-repeat top/contain;
+                position: absolute;
+                top: 86%;
+                left: 16%;
+            }
         }
     }
 }
