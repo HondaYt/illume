@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: 80px;
+    min-height: 80px;
     border-radius: 100vh;
     background: linear-gradient(262deg, #59d4fa 36.35%, #b1edff 96.4%);
 
@@ -16,7 +16,6 @@
         right: 20px;
         top: 50%;
         transform: translateY(-50%);
-        border: 2px solid #fff;
         border-radius: 100vh;
         display: flex;
         align-items: center;
