@@ -13,7 +13,7 @@ const DosisFont = Dosis({
 export default function Profile_header() {
     return (
         <div>
-            <Link href="/roomInner" className={styles.back_link}>
+            <Link href="/room" className={styles.back_link}>
                 <Image src="assets/icon-back.svg" width={20} height={20} alt='' />
             </Link>
             <div className={styles.profile_container}>
