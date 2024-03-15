@@ -2,7 +2,7 @@
 import styles from '@/styles/header.module.scss';
 import { useHeaderContext } from '@/contexts/HeaderContext';
 import MainHeader from "@/components/mainHeader";
-import SubHeader from "@/components/subHeader";
+import SubHeader from "@/components/roomHeader";
 export default function Header() {
 
   const { currentHeader } = useHeaderContext();
