@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { lazy } from 'react';
 import { Dosis } from 'next/font/google';
 import Splash from '@/components/splash';
-import Rooms from '@/components/room';
+import RoomChild from '@/components/roomChild';
 import Mainheader from '@/components/mainHeader';
 import GroupAdd from '@/components/addGroup';
 import Mainfooter from '@/components/footer';

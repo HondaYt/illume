@@ -24,7 +24,10 @@ export const HeaderProvider = ({ children }: { children: ReactNode }) => {
             case '/':
                 setCurrentHeader(<MainHeader />);
                 break;
-            case '/roomInner':
+            case '/main':
+                setCurrentHeader(<MainHeader />);
+                break;
+            case '/room':
                 setCurrentHeader(<SubHeader />);
                 break;
             case '/profile':

@@ -4,15 +4,8 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { lazy } from 'react';
 import { Dosis } from 'next/font/google';
-import Splash from '@/components/splash';
-import Room from '@/components/room';
-import Mainheader from '@/components/mainHeader';
-import Header from '@/components/header';
-import GroupAdd from '@/components/addGroup';
-import Footer from '@/components/footer';
-import Subheader from '@/components/subHeader';
-import Comment from '@/components/comment';
-import UserIcon from '@/components/userIcon';
+import RoomChild from '@/components/roomChild';
+
 import styles from '@/styles/main.module.scss';
 
 
@@ -23,13 +16,18 @@ const DosisFont = Dosis({
 })
 
 export default function Main() {
+    const roomChild = [
+        { roomName: "Web制作合宿", href: "/room", count: 20 },
+        { roomName: "ECC WebDesign", href: "/room", count: 15 },
+        { roomName: "軽音部", href: "/room", count: 10 }
+    ]
 
     return (
         <main className={styles.main}>
             <div className={styles.room_wrapper}>
-                <Room roomName="Web制作合宿" href="/roomInner" count={20} />
-                <Room roomName="ECC WebDesign" href="/roomInner" count={15} />
-                <Room roomName="軽音部" href="/roomInner" count={10} />
+                {roomChild.map((room, index) => (
+                    <RoomChild key={`roomChild-${index}`} roomName={room.roomName} href={room.href} count={room.count} />
+                ))}
             </div>
         </main>
     )
