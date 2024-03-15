@@ -9,7 +9,7 @@ import RoomChild from '@/components/roomChild';
 import Mainheader from '@/components/mainHeader';
 import GroupAdd from '@/components/addGroup';
 import Mainfooter from '@/components/footer';
-import Subheader from '@/components/subHeader';
+import Subheader from '@/components/roomHeader';
 import Comment from '@/components/comment';
 import Main from '@/app/main/page';
 

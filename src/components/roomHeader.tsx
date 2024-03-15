@@ -1,7 +1,8 @@
 "use client"
-import styles from '@/styles/sub_header.module.scss';
+import styles from '@/styles/roomHeader.module.scss';
 import { Dosis } from 'next/font/google';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const DosisFont = Dosis({
     weight: "400",

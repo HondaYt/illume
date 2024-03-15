@@ -2,7 +2,7 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
 import MainHeader from '@/components/mainHeader';
-import SubHeader from '@/components/subHeader';
+import SubHeader from '@/components/roomHeader';
 import ProfileHeader from '@/components/profileHeader';
 
 const HeaderContext = createContext<{
